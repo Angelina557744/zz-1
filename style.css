@@ -1,0 +1,459 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #ffffff;
+  --bg-soft: #faf7fd;
+  --text: #2a2a35;
+  --text-soft: #6b6b7b;
+  --accent-1: #a855f7;
+  --accent-2: #ec7fc4;
+  --gradient: linear-gradient(135deg, #a855f7 0%, #ec7fc4 100%);
+  --border: #ece5f5;
+  --radius: 20px;
+  --radius-sm: 14px;
+  --shadow-soft: 0 12px 40px rgba(168, 85, 247, 0.08);
+  --shadow-btn: 0 12px 30px rgba(168, 85, 247, 0.28);
+  --font: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font);
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0 28px;
+}
+
+.header {
+  padding: 28px 0;
+  background: var(--bg);
+}
+
+.logo img {
+  height: 48px;
+  width: auto;
+}
+
+.hero {
+  padding: 40px 0 60px;
+  text-align: center;
+}
+
+.hero__badge {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-1);
+  background: rgba(168, 85, 247, 0.08);
+  padding: 8px 18px;
+  border-radius: 999px;
+  margin-bottom: 22px;
+}
+
+.hero__title {
+  font-size: 46px;
+  line-height: 1.15;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  max-width: 780px;
+  margin: 0 auto 18px;
+}
+
+.hero__subtitle {
+  font-size: 18px;
+  color: var(--text-soft);
+  font-weight: 500;
+}
+
+.video {
+  padding: 0 0 80px;
+}
+
+.video__frame {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  background: #000;
+  aspect-ratio: 16 / 9;
+}
+
+.video__frame video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.about {
+  padding: 20px 0 80px;
+  text-align: center;
+}
+
+.about .section-text {
+  max-width: 720px;
+  margin: 0 auto 18px;
+}
+
+.section-title {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.section-text {
+  font-size: 17px;
+  color: var(--text-soft);
+  line-height: 1.7;
+}
+
+.benefits {
+  padding: 40px 0 90px;
+  background: var(--bg-soft);
+}
+
+.benefits .section-title {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 46px;
+}
+
+.benefits__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.benefit-card {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 34px 28px;
+  text-align: center;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 50px rgba(168, 85, 247, 0.14);
+}
+
+.benefit-card__icon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 20px;
+  border-radius: 18px;
+  background: rgba(168, 85, 247, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-1);
+}
+
+.benefit-card__icon svg {
+  width: 26px;
+  height: 26px;
+}
+
+.benefit-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.benefit-card p {
+  font-size: 15px;
+  color: var(--text-soft);
+  line-height: 1.6;
+}
+
+.calc {
+  padding: 90px 0;
+}
+
+.calc__inner {
+  background: var(--bg-soft);
+  border-radius: 28px;
+  padding: 56px 48px;
+  text-align: center;
+}
+
+.calc .section-title {
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.calc .section-text {
+  max-width: 620px;
+  margin: 0 auto 36px;
+}
+
+.calc__form {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.calc__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+.calc__field label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-soft);
+  letter-spacing: 0.02em;
+}
+
+.calc__field input {
+  font-family: inherit;
+  font-size: 16px;
+  padding: 14px 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  min-width: 200px;
+}
+
+.calc__field input:focus {
+  border-color: var(--accent-1);
+  box-shadow: 0 0 0 4px rgba(168, 85, 247, 0.1);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 32px;
+  border-radius: 999px;
+  border: none;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn--primary {
+  background: var(--gradient);
+  color: #fff;
+  box-shadow: var(--shadow-btn);
+}
+
+.btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgba(168, 85, 247, 0.36);
+}
+
+.btn--primary:active {
+  transform: translateY(0);
+}
+
+.calc__result {
+  margin-top: 34px;
+  padding: 28px 32px;
+  background: var(--bg);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  text-align: left;
+  color: var(--text);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.next {
+  padding: 20px 0 100px;
+  text-align: center;
+}
+
+.btn--next {
+  background: var(--gradient);
+  color: #fff;
+  box-shadow: var(--shadow-btn);
+  padding: 18px 38px;
+  font-size: 17px;
+  margin-bottom: 34px;
+}
+
+.btn--next:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 40px rgba(168, 85, 247, 0.36);
+}
+
+.btn--next svg {
+  width: 20px;
+  height: 20px;
+}
+
+.lessons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.lesson-dot {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-soft);
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  transition: all 0.2s ease;
+}
+
+.lesson-dot:hover {
+  border-color: var(--accent-1);
+  color: var(--accent-1);
+}
+
+.lesson-dot.is-active {
+  background: var(--gradient);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 8px 20px rgba(168, 85, 247, 0.3);
+}
+
+.footer {
+  padding: 70px 0 90px;
+  background: var(--bg-soft);
+  text-align: center;
+}
+
+.footer__title {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  margin-bottom: 12px;
+}
+
+.footer__text {
+  font-size: 17px;
+  color: var(--text-soft);
+  margin-bottom: 28px;
+}
+
+@media (max-width: 900px) {
+  .hero__title {
+    font-size: 36px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .benefits__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .calc__inner {
+    padding: 40px 24px;
+  }
+
+  .calc__form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .calc__field input {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  body {
+    font-size: 16px;
+  }
+
+  .hero {
+    padding: 20px 0 40px;
+  }
+
+  .hero__title {
+    font-size: 28px;
+  }
+
+  .video {
+    padding-bottom: 50px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .benefit-card {
+    padding: 26px 22px;
+  }
+
+  .calc {
+    padding: 50px 0;
+  }
+
+  .calc__inner {
+    border-radius: 20px;
+  }
+
+  .footer {
+    padding: 50px 0 70px;
+  }
+
+  .footer__title {
+    font-size: 24px;
+  }
+}
