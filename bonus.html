@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Код Успеха — Бонусы</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="Код Успеха">
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <span class="hero__badge">Бонусы</span>
+        <h1 class="hero__title">Благодарю вас за просмотр курса!</h1>
+        <p class="hero__subtitle">Заберите мини-руководство и узнайте, как активировать вашу денежную стихию</p>
+      </div>
+    </section>
+
+    <section class="bonus-guide">
+      <div class="container">
+        <div class="bonus-guide__inner">
+          <h2 class="section-title">Получите мини-руководство «Ваша денежная стихия в действии»</h2>
+          <p class="section-text">
+            В мини-руководстве вы найдёте:
+          </p>
+          <ul class="bonus-list">
+            <li>Подробный анализ устаревших установок, блокирующих ваш потенциал</li>
+            <li>Как определить свой элемент денег</li>
+            <li>Особенности каждой стихии денег относительно вашего Мастера дня</li>
+            <li>Как активировать вашу денежную стихию через соответствующий цвет денежного хранилища</li>
+            <li>Выясните, есть ли у вас склонности к предпринимательской деятельности</li>
+          </ul>
+          <p class="section-text">
+            Это поможет вам понять, какие практические шаги вы можете сделать уже сейчас для улучшения своего материального положения.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="course-offer">
+      <div class="container">
+        <div class="course-offer__inner">
+          <span class="course-offer__badge">Время большой награды пришло!</span>
+          <h2 class="course-offer__title">«Большая Награда» — ваш путь к женскому успеху и самореализации</h2>
+          <p class="course-offer__text">
+            В курсе 4 модуля, которые помогут раскрыть ваш женский потенциал:
+          </p>
+          <div class="course-modules">
+            <div class="course-module">Код женской силы</div>
+            <div class="course-module">Код удачи</div>
+            <div class="course-module">Код любви</div>
+            <div class="course-module">Код денег</div>
+          </div>
+          <p class="course-offer__text">
+            В модуле «Код денег» вы узнаете:
+          </p>
+          <ul class="bonus-list">
+            <li>Как развить денежную интуицию</li>
+            <li>Какие денежные навыки развивать</li>
+            <li>Что такое «вталкивание денег»</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="buy">
+      <div class="container">
+        <h2 class="section-title">Приобрести полный доступ к курсу «Большая Награда»</h2>
+        <p class="section-text">
+          Для оформления и оплаты заказа нажмите на кнопку ниже. Если вам удобнее оплатить частями, напишите мне, и я оформлю для вас рассрочку на любой удобный период.
+        </p>
+
+        <div class="buy__actions">
+          <a href="#" class="btn btn--buy">
+            Приобрести полный доступ
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+              <line x1="3" y1="6" x2="21" y2="6"/>
+              <path d="M16 10a4 4 0 0 1-8 0"/>
+            </svg>
+          </a>
+          <a href="https://max.ru/" class="btn btn--outline" target="_blank" rel="noopener">
+            Оформить рассрочку
+          </a>
+        </div>
+
+        <p class="buy__note">
+          Напишите мне в личные сообщения в Макс, Вконтакте или на почту <a href="mailto:9-int@yandex.ru">9-int@yandex.ru</a>. Контакты вы найдёте ниже.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container">
+        <div class="contact__inner">
+          <h2 class="section-title">Остались вопросы?</h2>
+          <p class="section-text">
+            Задайте их в личном сообщении в Макс или заполните форму ниже, и я отвечу вам лично.
+          </p>
+
+          <form class="contact__form" id="contactForm">
+            <div class="contact__field">
+              <label for="contactName">Имя</label>
+              <input type="text" id="contactName" name="name" placeholder="Ваше имя" required>
+            </div>
+            <div class="contact__field">
+              <label for="contactMessage">Сообщение</label>
+              <textarea id="contactMessage" name="message" rows="4" placeholder="Ваш вопрос" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary">Отправить</button>
+          </form>
+
+          <div class="contact__success" id="contactSuccess" hidden>
+            Спасибо! Ваше сообщение отправлено. Я отвечу вам в ближайшее время.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="next">
+      <div class="container">
+        <div class="lessons">
+          <a href="index.html" class="lesson-dot">1</a>
+          <a href="kod-2.html" class="lesson-dot">2</a>
+          <a href="kod-3.html" class="lesson-dot">3</a>
+          <a href="kod-4.html" class="lesson-dot">4</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <h2 class="footer__title">Наши контакты</h2>
+      <p class="footer__text">
+        Макс, Вконтакте, почта <a href="mailto:9-int@yandex.ru">9-int@yandex.ru</a>
+      </p>
+      <a href="https://max.ru/" class="btn btn--primary" target="_blank" rel="noopener">Написать в Макс</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
